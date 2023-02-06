@@ -1,5 +1,6 @@
 <template>
-  <div class="landing w-100 f-left" v-if="config.title && base" @wheel="onScroll($event)">
+  <!-- <div class="landing w-100 f-left" v-if="config.title && base" @wheel="onScroll($event)"> -->
+  <div class="landing w-100 f-left" v-if="config.title && base">
     <div class="w-100 f-left mb-18 landing-main-title">
       <div class="w-55 f-left mt-5 pl-130">
         <h1 class="shotover-title w-100 f-left">{{ config.title }}</h1>
@@ -14,8 +15,8 @@
         </a>
       </div>
 
-      <div class="w-45 f-left landing-title-img">
-        <img class="w-80 ml-20" :src="base(config.titleImg)">
+      <div class="w-45 f-left">
+        <img class="landing-title-img ml-20" :src="base(config.titleImg)">
       </div>
     </div>
 
@@ -93,7 +94,7 @@
       <div class="proxy-item" style="top: 535px; right: -120px">pscale connect</div>
     </div>
 
-    <div class="w-100 f-left mb-24 p-130 landing-deploy">
+    <!-- <div class="w-100 f-left mb-24 p-130 landing-deploy">
       <div class="w-40 f-left">
         <h2 class="landing-title mb-4">
           {{ config.deploying.title }}
@@ -135,9 +136,9 @@
           </p>
         </div>
       </div>
-    </div>
+    </div> -->
 
-    <div class="w-100 f-left mb-18">
+    <!-- <div class="w-100 f-left mb-18">
       <div class="p-130">
         <h2 id="roadmap" ref="roadmap" class="landing-title w-100 f-left mb-2">
           {{ config.roadmap.title }}
@@ -163,7 +164,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
 
     <div class="name-description w-100 f-left">
       <div class="p-130">
@@ -205,25 +206,25 @@ export default {
         window.scrollTo(0, this.$refs.roadmap.offsetTop)
       }, 100)
     }
-  },
-
-  methods : {
-    onScroll (event) {
-      const c = this.$refs.roadmapContainer
-      const offsetTop = c.getBoundingClientRect().top
-
-      if (offsetTop >= 80 && offsetTop <= 160) {
-        document.getElementsByTagName('body')[0].classList.add("no-scroll-y")
-
-        if (event.deltaY > 0 ? c.scrollLeft + window.innerWidth >= 2890 : c.scrollLeft === 0) {
-          document.getElementsByTagName('body')[0].classList.remove("no-scroll-y")
-        } else {
-          c.scrollLeft += event.deltaY
-        }
-      } else {
-        document.getElementsByTagName('body')[0].classList.remove("no-scroll-y")
-      }
-    }
   }
+
+  // methods : {
+  //   onScroll (event) {
+  //     const c = this.$refs.roadmapContainer
+  //     const offsetTop = c.getBoundingClientRect().top
+
+  //     if (offsetTop >= 80 && offsetTop <= 160) {
+  //       document.getElementsByTagName('body')[0].classList.add("no-scroll-y")
+
+  //       if (event.deltaY > 0 ? c.scrollLeft + window.innerWidth >= 2890 : c.scrollLeft === 0) {
+  //         document.getElementsByTagName('body')[0].classList.remove("no-scroll-y")
+  //       } else {
+  //         c.scrollLeft += event.deltaY
+  //       }
+  //     } else {
+  //       document.getElementsByTagName('body')[0].classList.remove("no-scroll-y")
+  //     }
+  //   }
+  // }
 }
 </script>

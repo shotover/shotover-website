@@ -24,11 +24,11 @@ export default {
       { text: 'Docs', link: '/docs/user-guide/introduction' },
       { text: 'Blog', link: '/blog/' },
       { text: 'Github', link: 'https://github.com/shotover/shotover-proxy' },
-      { text: 'Contacts', link: '/contacts' }
+      // { text: 'Contacts', link: '/contacts' }
     ],
 
     blog: {
-      title: 'Welcome to our blog!',
+      title: 'Shotover Proxy blog',
 
       categories: ['how-to', 'opinion', 'updates', 'uncategorized'],
 
@@ -265,8 +265,8 @@ export default {
 
     copyrightMessages: {
       m1: 'Copyright © Shotover Ltd 2022. All rights reserved.',
-      m2: 'Copyright Shotover Ltd. Authorised by the Prudential Regulation Authority and regulated by the Financial Conduct Authority and the Prudential Regulation Authority (Financial Services Register number: 754568). Registered Address: ClearBank, Borough Yards, 13 Dirty Lane, London, SE1 9PA.',
-      m3: 'Shotover® provides customers with a Definitive Services Agreement, which covers the provision of indirect access services. Code of Conduct for Indirect Access Providers.'
+      m2: '',
+      m3: ''
     }
   }
 }

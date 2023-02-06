@@ -3,8 +3,8 @@
     <div class="w-100 f-left">
       <h1 class="blog-title mb-8">{{ config.title }}</h1>
 
-      <div v-for="post in postsToShow" :key="post.path" class="w-100 f-left mb-6">
-        <div class="post-img-sm f-left" :style="`background-image: url('${post.pathToImage}')`"></div>
+      <div v-for="post in postsToShow" :key="post.path" class="w-100 f-left mb-8">
+        <!-- <div class="post-img-sm f-left" :style="`background-image: url('${post.pathToImage}')`"></div> -->
 
         <div class="post-info f-left pl-6">
           <h2 class="post-title" style="color: var(--vp-c-text-1) !important">{{ post.title }}</h2>
