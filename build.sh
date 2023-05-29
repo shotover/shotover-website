@@ -10,8 +10,6 @@ git clone https://github.com/shotover/shotover-proxy.git
 mv shotover-proxy/docs/src/* docs/docs/
 rm -rf shotover-proxy
 cd docs/docs/
-find . -type f -name "*.md" -exec sed -i 's/```YAML/```yaml/g' {} +
-find . -type f -name "*.md" -exec sed -i 's/```console/```make/g' {} +
 rm logo.png logo.svg index.md SUMMARY.md
 cd ../../
 npm install --frozen-lockfile
