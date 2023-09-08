@@ -2,21 +2,21 @@ export default [
   {
     text: 'User Guide',
     items: [
-      { text: 'Introduction', link: '/docs/user-guide/introduction' },
-      { text: 'Getting Started', link: '/docs/user-guide/getting-started' },
-      { text: 'Concepts', link: '/docs/user-guide/concepts' },
-      { text: 'Configuration', link: '/docs/user-guide/configuration' },
-      { text: 'Observability', link: '/docs/user-guide/observability' }
+      { text: 'Introduction', link: '/docs/latest/user-guide/introduction' },
+      { text: 'Getting Started', link: '/docs/latest/user-guide/getting-started' },
+      { text: 'Concepts', link: '/docs/latest/user-guide/concepts' },
+      { text: 'Configuration', link: '/docs/latest/user-guide/configuration' },
+      { text: 'Observability', link: '/docs/latest/user-guide/observability' }
     ]
   },
   {
     items: [
-      { text: 'Source Types', link: '/docs/source-types' }
+      { text: 'Source Types', link: '/docs/latest/source-types' }
     ]
   },
   {
     items: [
-      { text: 'Transforms', link: '/docs/transforms' }
+      { text: 'Transforms', link: '/docs/latest/transforms' }
     ]
   },
   {
@@ -25,21 +25,21 @@ export default [
       {
         text: 'Redis Cluster',
         items: [
-          { text: 'Unaware client', link: '/docs/examples/redis-clustering-unaware' },
-          { text: 'Aware client', link: '/docs/examples/redis-clustering-aware' }
+          { text: 'Unaware client', link: '/docs/latest/examples/redis-clustering-unaware' },
+          { text: 'Aware client', link: '/docs/latest/examples/redis-clustering-aware' }
         ]
       },
       {
         text: 'Cassandra Cluster',
         items: [
-          { text: 'Shotover sidecars', link: '/docs/examples/cassandra-cluster-shotover-sidecar' }
+          { text: 'Shotover sidecars', link: '/docs/latest/examples/cassandra-cluster-shotover-sidecar' }
         ]
       }
     ]
   },
   {
     items: [
-      { text: 'Contributing', link: '/docs/contributing' }
+      { text: 'Contributing', link: '/docs/latest/contributing' }
     ]
   }
 ]

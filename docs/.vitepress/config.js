@@ -21,7 +21,7 @@ export default {
     },
 
     nav: [
-      { text: 'Docs', link: '/docs/user-guide/introduction' },
+      { text: 'Docs', link: '/docs/latest/user-guide/introduction' },
       //{ text: 'Blog', link: '/blog/' },
       { text: 'Github', link: 'https://github.com/shotover/shotover-proxy' },
     ],
@@ -76,7 +76,7 @@ export default {
       subtitle2: '',
       motto: '',
       actionBtnText: 'Get started',
-      actionBtnLink: '/docs/user-guide/getting-started',
+      actionBtnLink: '/docs/latest/user-guide/getting-started',
 
       description: {
         title: 'What is Shotover?',
@@ -89,17 +89,17 @@ export default {
           {
             name: 'Introduction',
             description: 'For more information on what Shotover Proxy is, why it exists and some of the underlying philosophies behind it.',
-            link: '/docs/user-guide/introduction'
+            link: '/docs/latest/user-guide/introduction'
           },
           {
             name: 'Getting started',
             description: 'For details on how to jump straight in and get up running.',
-            link: '/docs/user-guide/getting-started'
+            link: '/docs/latest/user-guide/getting-started'
           },
           {
             name: 'Concepts',
             description: 'For a deeper dive into some of the fundamental Shotover concepts.',
-            link: '/docs/user-guide/concepts'
+            link: '/docs/latest/user-guide/concepts'
           }
         ]
       },
