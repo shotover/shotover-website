@@ -22,9 +22,8 @@ export default {
 
     nav: [
       { text: 'Docs', link: '/docs/user-guide/introduction' },
-      { text: 'Blog', link: '/blog/' },
+      //{ text: 'Blog', link: '/blog/' },
       { text: 'Github', link: 'https://github.com/shotover/shotover-proxy' },
-      // { text: 'Contacts', link: '/contacts' }
     ],
 
     blog: {
@@ -73,9 +72,9 @@ export default {
     landing: {
       title: 'Shotover',
       titleImg: ref('/landing/title_image.png'),
-      subtitle1: 'Proxy server.',
-      subtitle2: 'Making your life easier.',
-      motto: 'Controlling. Managing. Modyfiying.',
+      subtitle1: 'L7 data layer proxy',
+      subtitle2: '',
+      motto: '',
       actionBtnText: 'Get started',
       actionBtnLink: '/docs/user-guide/getting-started',
 
@@ -230,43 +229,5 @@ export default {
         description: 'Shotover refers to the Shotover (Kimi-ākau) river in Otago, New Zealand - close to Queenstown and eventually flowing into Lake Wakatipu via the Kawarau River, it\'s famous for white water rafting, bungy-jumping, fast rapids and jet boating.'
       }
     },
-
-    contacts: {
-      image: ref('/contacts.png'),
-      imageMsg: 'For general questions ask a member of our team, who will be happy to help!',
-
-      enquiries: [
-        {
-          name: 'General enquiries:',
-          email: 'enquiries@shotover.io'
-        },
-        {
-          name: 'Recruitment enquiries:',
-          email: 'recruitment@shotover.io'
-        }
-      ],
-
-      adress: {
-        company: 'Shotover',
-        city: 'Christchurch',
-        country: 'New Zealand'
-      }
-    }
   },
-
-  footerConfig: {
-    nav: [
-      { text: 'Github', link: 'https://github.com/shotover/shotover-proxy' },
-      { text: 'Introduction', link: '/docs/user-guide/introduction' },
-      { text: 'Concepts', link: '/docs/user-guide/concepts' },
-      { text: 'Roadmap', link: '/#roadmap' },
-      { text: 'Contacts', link: '/contacts' }
-    ],
-
-    copyrightMessages: {
-      m1: 'Copyright © Shotover Ltd 2022. All rights reserved.',
-      m2: '',
-      m3: ''
-    }
-  }
 }
