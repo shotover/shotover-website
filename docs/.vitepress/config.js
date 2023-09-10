@@ -72,7 +72,7 @@ export default {
     landing: {
       title: 'Shotover',
       titleImg: ref('/landing/title_image.png'),
-      subtitle1: 'Proxy server',
+      subtitle1: 'L7 data layer proxy',
       subtitle2: '',
       motto: '',
       actionBtnText: 'Get started',
