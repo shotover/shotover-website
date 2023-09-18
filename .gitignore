@@ -1,2 +1,4 @@
 shotover-proxy
 node_modules
+docs/.vitepress/dist
+docs/docs/latest
