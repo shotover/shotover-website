@@ -11,7 +11,7 @@ export default [
   },
   {
     items: [
-      { text: 'Source Types', link: '/docs/latest/source-types' }
+      { text: 'Source Types', link: '/docs/latest/sources.md' }
     ]
   },
   {
@@ -39,7 +39,7 @@ export default [
   },
   {
     items: [
-      { text: 'Contributing', link: '/docs/latest/contributing' }
+      { text: 'Contributing', link: '/docs/latest/dev-docs/contributing' }
     ]
   }
 ]
