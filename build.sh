@@ -5,12 +5,15 @@ set -u
 
 rm -rf docs/docs/examples
 rm -rf docs/docs/user-guide
-git clone https://github.com/shotover/shotover-proxy.git --depth 1
+# TODO: in the future pin to a specific release, the docs for the latest release 0.4.1 is broken so we cant do that yet.
+#git clone --depth 1 --branch v0.4.1 https://github.com/shotover/shotover-proxy.git
+git clone --depth 1 https://github.com/shotover/shotover-proxy.git
 rm -rf docs/docs/latest
 mv shotover-proxy/docs/src docs/docs/latest
 rm -rf shotover-proxy
 cd docs/docs/latest
 find . -type f -name "*.md" -exec sed -i 's/```YAML/```yaml/g' {} +
+find . -type f -name "*.md" -exec sed -i 's/```plain/```/g' {} +
 find . -type f -name "*.md" -exec sed -i 's/```console/```make/g' {} +
 rm logo.png logo.svg index.md SUMMARY.md
 cd ../../../
